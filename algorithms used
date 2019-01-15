@@ -1,20 +1,25 @@
 sklearn is the python library that provides us with the supervised learning algorithms:
 
-1)Logistic regression: Uses the sigmoid function on the dataset to tune the parameters for each class 
+1) Logistic regression: Uses the sigmoid function on the dataset to tune the parameters for each class 
 and for a new feature vector evaluates dot product of parameter vector and the feature vector.
 Class that gets highest product is allotted to the vector.
-2)SVM(support vector machine):Takes in the dataset and with the help of kernel function transforms it into one,
+
+2) SVM(support vector machine): Takes in the dataset and with the help of kernel function transforms it into one,
 which can be segregated by appropriate hyperplane. 
 New feature vector is assigned to the class according to its location relative to the hyperplane.
-3)KNN(K nearest neighbours) : Given a new feature vector, this algorithm finds k nearest feature vectors with respect to it 
+
+3) KNN(K nearest neighbours) : Given a new feature vector, this algorithm finds k nearest feature vectors with respect to it 
   and the vectoris allotted to the class which is present maximum number of times.
-4)Gaussian Naive Bayes (NB) : This assumes that all the variables are conditionally (within a class) independent 
-  and are normally distributed. So it calculates the mean and variance of each variable for every class.
+
+4) Gaussian Naive Bayes (NB) : This assumes that all the variables are conditionally (within a class) independent 
+and are normally distributed. So it calculates the mean and variance of each variable for every class.
   Using these and some basic probability it evaluates the probabilty the new feature vector to lie in each class. 
   Class with highest probability is allotted to the vector.
-5)Classification and Regression Trees (CART) : This splits each feature vector(node) into subnodes 
+
+5) Classification and Regression Trees (CART) : This splits each feature vector(node) into subnodes 
 so as to maintain common traits within them until met by a stopping condition.
-6)Linear Discriminant Analysis (LDA) : In a way similar to PCA (as both of them reuce the dimensions of the data),
+
+6) Linear Discriminant Analysis (LDA) : In a way similar to PCA (as both of them reuce the dimensions of the data),
 but it focuses on minimizing the scatter and maximizing the separation between the classes.
 It creates n-1 (where n is the number of classes) axes dividing the data into various classes.
 For multiple classes first finds a central point then calculates distance from center of each class.	
