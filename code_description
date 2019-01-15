@@ -6,11 +6,14 @@ Minimum, first quartile, median, second quartile and maximum.
 
 sklearn.model_selection_Kfold first shuffles the dataset using the random number generator whose sees is provided by us. 
 Then splits it into n_splits components and turn by turn trains on 9 of them and tests on the 1 component left.
+
 So the split is:
 Break the 150 observations into : 120(train+validate)+30(test) (80%,20%) 
 120 is further split as : 108(train)+12(validate)  (90%,10%)
 We train every model using the 108 observations and then validate each of them on the 12 observations of the validation set.
+
 The algorithm giving maximum accuracy is selected and used for test data.
+
 Precision is the ratio tp/(tp+fp) : ability to label as negative a sample that is actually negative.
 Recall is th ratio tp/(tp=fn) : ability to classify all teh positive samples.
 f1-score is the weighted harmonic mean of precision and recall. best value is 1 worst being 0.
