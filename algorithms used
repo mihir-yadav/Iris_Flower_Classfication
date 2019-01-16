@@ -19,7 +19,7 @@ and are normally distributed. So it calculates the mean and variance of each var
 5) Classification and Regression Trees (CART) : This splits each feature vector(node) into subnodes 
 so as to maintain common traits within them until met by a stopping condition.
 
-6) Linear Discriminant Analysis (LDA) : In a way similar to PCA (as both of them reuce the dimensions of the data),
+6) Linear Discriminant Analysis (LDA) : In a way similar to PCA (as both of them reduce the dimensions of the data),
 but it focuses on minimizing the scatter and maximizing the separation between the classes.
 It creates n-1 (where n is the number of classes) axes dividing the data into various classes.
 For multiple classes first finds a central point then calculates distance from center of each class.	
