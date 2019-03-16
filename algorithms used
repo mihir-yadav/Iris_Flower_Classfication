@@ -6,10 +6,17 @@ Class that gets highest product is allotted to the vector.
 
 2) SVM(support vector machine): Takes in the dataset and with the help of kernel function transforms it into one,
 which can be segregated by appropriate hyperplane. 
-New feature vector is assigned to the class according to its location relative to the hyperplane.
+New feature vector is assigned to the class according to its location relative to the hyperplane.Used when the decision boundary(hyperplane)
+is non linear . 
 
 3) KNN(K nearest neighbours) : Given a new feature vector, this algorithm finds k nearest feature vectors with respect to it 
-  and the vectoris allotted to the class which is present maximum number of times.
+  and the vector is allotted to the class which is present maximum number of times.
+  The main disadvantage of this approach is that the algorithm must compute the distance and sort all the training data at each prediction,
+  which can be slow if there are a large number of training examples.Choosing optimal K is also a challenge.
+  A drawback of the basic "majority voting" classification occurs when the class distribution is skewed.
+  That is, examples of a more frequent class tend to dominate the prediction of the new example,
+  because they tend to be common among the k nearest neighbors due to their large number.
+  optimal K is K = sqrt(m)/2, where m stands for the number of samples in your training dataset.K should be odd. 
 
 4) Gaussian Naive Bayes (NB) : This assumes that all the variables are conditionally (within a class) independent 
 and are normally distributed. So it calculates the mean and variance of each variable for every class.
