@@ -15,6 +15,6 @@ We train every model using the 108 observations and then validate each of them o
 The algorithm giving maximum accuracy on validaton set is selected and used for test data.
 
 Precision is the ratio tp/(tp+fp) : ability to label as negative a sample that is actually negative.
-Recall is th ratio tp/(tp=fn) : ability to classify all teh positive samples.
+Recall is the ratio tp/(tp+fn) : ability to classify all the positive samples.
 f1-score is the weighted harmonic mean of precision and recall. best value is 1 worst being 0.
 Support is the number of occurences of each class in Y_test.
