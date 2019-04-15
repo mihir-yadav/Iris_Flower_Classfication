@@ -25,7 +25,8 @@ and are normally distributed. So it calculates the mean and variance of each var
 
 5) Classification and Regression Trees (CART) : This splits each feature vector(node) into subnodes 
 so as to maintain common traits within them until met by a stopping condition.all possible splits are tried at every level,
-the one that gives the highest decrease in  entropy(information gain) is considered.
+the one that gives the highest decrease in cost function is considered.For regression-> sum squared function.
+For classification -> gini index. Followed by pruning, to avoid overftting.
 
 6) Linear Discriminant Analysis (LDA) : In a way similar to PCA (as both of them reduce the dimensions of the data),
 but it focuses on minimizing the scatter and maximizing the separation between the classes.
