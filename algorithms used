@@ -5,9 +5,8 @@ and for a new feature vector evaluates dot product of parameter vector and the f
 Class that gets highest product is allotted to the vector.
 
 2) SVM(support vector machine): Takes in the dataset and with the help of kernel function transforms it into one,
-which can be segregated by appropriate hyperplane. 
-New feature vector is assigned to the class according to its location relative to the hyperplane.Used when the decision boundary(hyperplane)
-is non linear . 
+which can be segregated by appropriate hyperplane, by computing new features. 
+New feature vector is assigned to the class according to its location relative to the hyperplane.
 
 3) KNN(K nearest neighbours) : Given a new feature vector, this algorithm finds k nearest feature vectors with respect to it 
   and the vector is allotted to the class which is present maximum number of times.
